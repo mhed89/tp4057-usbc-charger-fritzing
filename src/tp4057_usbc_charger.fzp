@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.3" moduleId="TP4057_USBC_Charger_LX-LBES_ModuleID">
+  <version>1</version>
+  <title>TP4057 USB-C Li-Ion Charger Module</title>
+  <label>U</label>
+  <date>2026-10-03</date>
+  <author>Markus</author>
+  <tags><tag>TP4057</tag><tag>charger</tag><tag>lithium</tag><tag>LiPo</tag><tag>18650</tag><tag>USB-C</tag><tag>LX-LBES</tag></tags>
+  <properties>
+    <property name="family">battery charger module</property>
+    <property name="variant">TP4057 USB-C</property>
+    <property name="chip">TP4057</property>
+    <property name="input voltage">5V</property>
+    <property name="charge current">1A</property>
+  </properties>
+  <description>TP4057 USB-C single-cell Li-Ion/LiPo (3.7 V, e.g. 18650) charging module, board marking LX-LBES. 5 V input via USB-C or IN+/IN- pads, 1 A charge current, B+/B- battery pads and OUT+/OUT- load pads.</description>
+  <views>
+    <iconView><layers image="icon/tp4057_usbc_charger_icon.svg"><layer layerId="icon"/></layers></iconView>
+    <breadboardView><layers image="breadboard/tp4057_usbc_charger_breadboard.svg"><layer layerId="breadboard"/></layers></breadboardView>
+    <schematicView><layers image="schematic/tp4057_usbc_charger_schematic.svg"><layer layerId="schematic"/></layers></schematicView>
+    <pcbView><layers image="pcb/tp4057_usbc_charger_pcb.svg"><layer layerId="copper0"/><layer layerId="silkscreen"/><layer layerId="copper1"/></layers></pcbView>
+  </views>
+  <connectors>
+    <connector id="connector0" name="OUT-" type="male">
+      <description>Protected load output, negative</description>
+      <views>
+        <breadboardView><p layer="breadboard" svgId="connector0pin" terminalId="connector0terminal"/></breadboardView>
+        <schematicView><p layer="schematic" svgId="connector0pin" terminalId="connector0terminal"/></schematicView>
+        <pcbView><p layer="copper0" svgId="connector0pin"/><p layer="copper1" svgId="connector0pin"/></pcbView>
+      </views>
+    </connector>
+    <connector id="connector1" name="BAT-" type="male">
+      <description>Battery negative (B-)</description>
+      <views>
+        <breadboardView><p layer="breadboard" svgId="connector1pin" terminalId="connector1terminal"/></breadboardView>
+        <schematicView><p layer="schematic" svgId="connector1pin" terminalId="connector1terminal"/></schematicView>
+        <pcbView><p layer="copper0" svgId="connector1pin"/><p layer="copper1" svgId="connector1pin"/></pcbView>
+      </views>
+    </connector>
+    <connector id="connector2" name="BAT+" type="male">
+      <description>Battery positive (B+)</description>
+      <views>
+        <breadboardView><p layer="breadboard" svgId="connector2pin" terminalId="connector2terminal"/></breadboardView>
+        <schematicView><p layer="schematic" svgId="connector2pin" terminalId="connector2terminal"/></schematicView>
+        <pcbView><p layer="copper0" svgId="connector2pin"/><p layer="copper1" svgId="connector2pin"/></pcbView>
+      </views>
+    </connector>
+    <connector id="connector3" name="OUT+" type="male">
+      <description>Load output, positive</description>
+      <views>
+        <breadboardView><p layer="breadboard" svgId="connector3pin" terminalId="connector3terminal"/></breadboardView>
+        <schematicView><p layer="schematic" svgId="connector3pin" terminalId="connector3terminal"/></schematicView>
+        <pcbView><p layer="copper0" svgId="connector3pin"/><p layer="copper1" svgId="connector3pin"/></pcbView>
+      </views>
+    </connector>
+    <connector id="connector4" name="IN-" type="pad">
+      <description>Power input negative (solder pad, alongside USB-C)</description>
+      <views>
+        <breadboardView><p layer="breadboard" svgId="connector4pin" terminalId="connector4terminal"/></breadboardView>
+        <schematicView><p layer="schematic" svgId="connector4pin" terminalId="connector4terminal"/></schematicView>
+        <pcbView><p layer="copper0" svgId="connector4pin"/><p layer="copper1" svgId="connector4pin"/></pcbView>
+      </views>
+    </connector>
+    <connector id="connector5" name="IN+" type="pad">
+      <description>Power input positive, 5 V (solder pad, alongside USB-C)</description>
+      <views>
+        <breadboardView><p layer="breadboard" svgId="connector5pin" terminalId="connector5terminal"/></breadboardView>
+        <schematicView><p layer="schematic" svgId="connector5pin" terminalId="connector5terminal"/></schematicView>
+        <pcbView><p layer="copper0" svgId="connector5pin"/><p layer="copper1" svgId="connector5pin"/></pcbView>
+      </views>
+    </connector>
+  </connectors>
+</module>
